@@ -2,7 +2,7 @@
 ```
 # 🤖 AutoMateAI
 
-AutoMateAI is a smart email assistant that reads Gmail messages, extracts tasks and urgency using Gemini 1.5 Flash, and lets you safely send professional replies through a Flask UI.
+AutoMateAI is a smart email assistant that reads Gmail messages, extracts tasks and urgency using Gemini 2.5 Flash, and lets you safely send professional replies through a Flask UI.
 
 ---
 
