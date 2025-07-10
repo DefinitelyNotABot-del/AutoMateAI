@@ -1,0 +1,27 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reply Preview</title>
+  <style>
+    body { font-family: Arial; margin: 2rem; }
+    textarea { width: 100%; }
+    pre { background: #f9f9f9; padding: 1rem; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <h2>📩 Email Details</h2>
+  <p><strong>From:</strong> {{ sender }}</p>
+  <p><strong>Subject:</strong> {{ subject }}</p>
+  <p><strong>Body:</strong></p>
+  <pre>{{ body }}</pre>
+
+  <h2>🤖 Suggested Auto-Reply</h2>
+  <form action="/send-reply" method="post">
+    <textarea name="reply_text" rows="6">{{ auto_reply }}</textarea><br><br>
+    <input type="hidden" name="to" value="{{ sender }}">
+    <input type="hidden" name="thread_id" value="{{ thread_id }}">
+    <button type="submit">✅ Send Reply</button>
+  </form>
+</body>
+</html>
